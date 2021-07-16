@@ -1,6 +1,6 @@
 # Heera Dock
 
-HeeraOS application dock panel.
+HeeraOS application dock panel.Based on cyber-dock(https://github.com/cyberos/cyber-dock)
 
 ## Dependencies
 
