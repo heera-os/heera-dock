@@ -247,6 +247,10 @@ Item {
                     asynchronous: true
                     Layout.alignment: Qt.AlignCenter
                 }
+              Label {
+                    text: battery.chargePercent + "%"
+                    color: HeeraUI.Theme.textColor
+                }
 
                 Image {
                     id: volumeIcon

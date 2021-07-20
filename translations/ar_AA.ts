@@ -27,25 +27,32 @@
 <context>
     <name>ControlCenter</name>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="167"/>
+        <location filename="../qml/ControlCenter.qml" line="157"/>
         <source>Wi-Fi</source>
         <translation>واي فاي</translation>
     </message>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="170"/>
+        <location filename="../qml/ControlCenter.qml" line="160"/>
+        <location filename="../qml/ControlCenter.qml" line="181"/>
         <source>On</source>
         <translation>مشغول</translation>
     </message>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="170"/>
+        <location filename="../qml/ControlCenter.qml" line="160"/>
+        <location filename="../qml/ControlCenter.qml" line="171"/>
         <location filename="../qml/ControlCenter.qml" line="181"/>
         <source>Off</source>
         <translation>غير مشغول</translation>
     </message>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="180"/>
+        <location filename="../qml/ControlCenter.qml" line="170"/>
         <source>Bluetooth</source>
         <translation>بلوتوث</translation>
+    </message>
+    <message>
+        <location filename="../qml/ControlCenter.qml" line="180"/>
+        <source>Dark Mode</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

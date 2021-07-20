@@ -22,18 +22,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2087"
-     inkscape:window-height="1047"
+     inkscape:window-width="2845"
+     inkscape:window-height="1885"
      id="namedview11"
      showgrid="false"
      inkscape:zoom="45.9375"
-     inkscape:cx="8"
+     inkscape:cx="6.062585"
      inkscape:cy="8"
-     inkscape:window-x="342"
-     inkscape:window-y="502"
-     inkscape:window-maximized="0"
+     inkscape:window-x="155"
+     inkscape:window-y="49"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg9"
-     inkscape:document-rotation="0" />
+     inkscape:document-rotation="0"
+     inkscape:snap-global="true" />
   <metadata
      id="metadata2">
     <rdf:RDF>
@@ -42,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,9 +55,9 @@
   </defs>
   <path
      class="ColorScheme-Text"
-     d="M 7.9981,1.0000174 V 7.1608928 L 4.7051,4.2795177 4.7031,4.281273 C 4.34735,3.9698113 3.70705,3.4096887 3.70705,3.4096887 L 3.00002,4.02834 7.54492,8.0017152 3.00002,11.97509 3.70705,12.593741 c 0,0 0.64035,-0.560079 0.99609,-0.871578 h 0.002 L 8.00004,8.8407878 V 15 h 1 l 4,-3.5 -4,-3.4999998 4,-3.5000001 L 9.00004,1 Z m 1.002,1.239 2.5859,2.2626627 -2.5859,2.2626626 z m 0,7.0000004 2.5859,2.2626632 -2.5859,2.262661 z"
-     color="#363636"
-     fill="#363636"
+     d="m 7.9981,1.0000175 v 6.160875 l -3.293,-2.881375 -0.002,0.00175 C 4.34735,3.9698113 3.70705,3.4096888 3.70705,3.4096888 L 3.00002,4.02834 l 4.5449,3.973375 -4.5449,3.973375 0.70703,0.618651 c 0,0 0.64035,-0.560078 0.99609,-0.871578 h 0.002 L 8.00004,8.8407875 V 15 h 1 l 4,-3.5 -4,-3.5 4,-3.5 -4,-3.5 z m 1.002,1.239 L 11.586,4.50168 9.0001,6.7643425 Z m 0,7 2.5859,2.2626625 -2.5859,2.262663 z"
+     color="#ffffff"
+     fill="#ffffff"
      id="path7"
-     style="fill:#363636;fill-opacity:1;stroke-width:0.935415" />
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.935414" />
 </svg>

@@ -3,7 +3,6 @@ import QtQuick.Controls 2.12
 import QtQuick.Window 2.12
 import QtQuick.Layouts 1.12
 import QtGraphicalEffects 1.15
-
 import Heera.Dock 1.0
 import HeeraUI 1.0 as HeeraUI
 import Heera.Accounts 1.0 as Accounts
@@ -171,10 +170,18 @@ ControlCenterDialog {
                     label: qsTr("Bluetooth")
                     text: qsTr("Off")
                 }
+                CardItem {
+                                    id: darkModeItem
+                                    Layout.fillHeight: true
+                                    Layout.fillWidth: true
+                                    icon: HeeraUI.Theme.darkMode || checked ? "qrc:/svg/dark/dark-mode.svg"
+                                                                         : "qrc:/svg/light/dark-mode.svg"
+                                    checked: HeeraUI.Theme.darkMode
+                                    label: qsTr("Dark Mode")
+                                    text: HeeraUI.Theme.darkMode ? qsTr("On") : qsTr("Off")
+                                    onClicked: appearance.switchDarkMode(!HeeraUI.Theme.darkMode)
+                                }
 
-                Item {
-                    Layout.fillWidth: true
-                }
             }
         }
 

@@ -11,8 +11,8 @@
    height="16"
    version="1.1"
    id="svg9"
-   sodipodi:docname="bluetooth-symbolic.svg"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+   sodipodi:docname="dark-mode.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -22,16 +22,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2087"
-     inkscape:window-height="1047"
+     inkscape:window-width="2160"
+     inkscape:window-height="1304"
      id="namedview11"
      showgrid="false"
      inkscape:zoom="45.9375"
      inkscape:cx="8"
      inkscape:cy="8"
-     inkscape:window-x="342"
-     inkscape:window-y="502"
-     inkscape:window-maximized="0"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg9"
      inkscape:document-rotation="0" />
   <metadata
@@ -53,10 +53,7 @@
        type="text/css">.ColorScheme-Text { color:#363636; } .ColorScheme-Highlight { color:#5294e2; }</style>
   </defs>
   <path
-     class="ColorScheme-Text"
-     d="M 7.9981,1.0000174 V 7.1608928 L 4.7051,4.2795177 4.7031,4.281273 C 4.34735,3.9698113 3.70705,3.4096887 3.70705,3.4096887 L 3.00002,4.02834 7.54492,8.0017152 3.00002,11.97509 3.70705,12.593741 c 0,0 0.64035,-0.560079 0.99609,-0.871578 h 0.002 L 8.00004,8.8407878 V 15 h 1 l 4,-3.5 -4,-3.4999998 4,-3.5000001 L 9.00004,1 Z m 1.002,1.239 2.5859,2.2626627 -2.5859,2.2626626 z m 0,7.0000004 2.5859,2.2626632 -2.5859,2.262661 z"
-     color="#363636"
-     fill="#363636"
-     id="path7"
-     style="fill:#363636;fill-opacity:1;stroke-width:0.935415" />
+     d="M 8.00028,1 C 4.140704,1 1,4.13971 1,7.9993 1,11.859394 4.140732,15 8.00028,15 11.859814,15 15,11.859394 15,7.9993 15,4.13971 11.859842,1 8.00028,1 Z m 0,12.593196 c -0.007,0 -0.014,-9.62e-4 -0.02058,-9.62e-4 V 2.407812 c 0.007,0 0.014,-0.00101 0.02058,-0.00101 3.083822,0 5.592902,2.508702 5.592902,5.592496 0,3.084326 -2.50908,5.593896 -5.592902,5.593896 z"
+     id="path2"
+     style="stroke-width:0.0287544;fill:#363636;fill-opacity:1" />
 </svg>

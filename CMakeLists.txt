@@ -17,6 +17,8 @@ find_package(dbusmenu-qt5 REQUIRED)
 find_package(HeeraUI REQUIRED)
 
 set(SRCS
+    src/appearance.cpp
+    src/appearance.h
     src/applicationitem.h
     src/applicationmodel.cpp
     src/battery.cpp

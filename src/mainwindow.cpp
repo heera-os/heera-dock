@@ -17,6 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include "appearance.h"
 #include "mainwindow.h"
 #include "iconthemeimageprovider.h"
 #include "processprovider.h"
@@ -47,6 +48,7 @@ MainWindow::MainWindow(QQuickView *parent)
     , m_appModel(new ApplicationModel)
     , m_resizeAnimation(new QVariantAnimation(this))
 {
+    qmlRegisterType<Appearance>("Heera.Dock", 1, 0, "Appearance");
     qmlRegisterType<DockSettings>("Heera.Dock", 1, 0, "DockSettings");
     qmlRegisterType<VolumeManager>("Heera.Dock", 1, 0, "Volume");
     qmlRegisterType<Battery>("Heera.Dock", 1, 0, "Battery");
