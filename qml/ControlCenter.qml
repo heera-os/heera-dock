@@ -292,7 +292,7 @@ ControlCenterDialog {
                     running: true
                     triggeredOnStart: true
                     onTriggered: {
-                        timeLabel.text = new Date().toLocaleString(Qt.locale(), Locale.ShortFormat)
+                        timeLabel.text = new Date().toLocaleString(Qt.locale(), Locale.LongFormat)
                     }
                 }
             }
@@ -310,6 +310,7 @@ ControlCenterDialog {
                     sourceSize: Qt.size(width, height)
                     source: "qrc:/svg/" + (HeeraUI.Theme.darkMode ? "dark/" : "light/") + battery.iconSource
                     asynchronous: true
+
                 }
 
                 Label {

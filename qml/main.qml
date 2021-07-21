@@ -263,21 +263,7 @@ Item {
                     Layout.alignment: Qt.AlignCenter
                 }
 
-                Label {
-                    id: timeLabel
-                    Layout.alignment: Qt.AlignCenter
-                    font.pixelSize: isHorizontal ? controlLayout.height / 3 : controlLayout.width / 5
 
-                    Timer {
-                        interval: 1000
-                        repeat: true
-                        running: true
-                        triggeredOnStart: true
-                        onTriggered: {
-                            timeLabel.text = new Date().toLocaleTimeString(Qt.locale(), Locale.ShortFormat)
-                        }
-                    }
-                }
 
                 // Padding
                 Item {
@@ -296,6 +282,41 @@ Item {
                 visible: HeeraUI.Theme.darkMode
             }
         }
+        StandardItem {
+
+
+                    id: datetimeitem
+
+
+                    Layout.fillHeight: true
+                    Layout.preferredWidth: _dateTimeLayout.implicitWidth + HeeraUI.Units.smallSpacing
+
+                    RowLayout {
+                        id: _dateTimeLayout
+                        anchors.fill: parent
+
+
+                        Label {
+                            id: timeLabel
+                            Layout.alignment: Qt.AlignCenter
+                            font.pointSize: rootItem.height ? rootItem.height / 3 : 1
+                            color: HeeraUI.Theme.textColor
+
+
+                            Timer {
+                                interval: 1000
+                                repeat: true
+                                running: true
+                                triggeredOnStart: true
+                                onTriggered: {
+                                    timeLabel.text= Qt.formatDateTime(new Date(), "hh:mm A\nyyyy-MM-dd")
+                                }
+                            }
+                        }
+                    }
+                }
+
+
     }
 
     ControlCenter {
@@ -308,4 +329,5 @@ Item {
             popupTips.hide()
         }
     }
+
 }
