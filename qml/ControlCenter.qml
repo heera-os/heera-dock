@@ -3,6 +3,7 @@ import QtQuick.Controls 2.12
 import QtQuick.Window 2.12
 import QtQuick.Layouts 1.12
 import QtGraphicalEffects 1.15
+
 import Heera.Dock 1.0
 import HeeraUI 1.0 as HeeraUI
 import Heera.Accounts 1.0 as Accounts
@@ -55,16 +56,12 @@ ControlCenterDialog {
     HeeraUI.RoundedRect {
         id: _background
         anchors.fill: parent
-        radius: control.height * 0.05
+        radius: control.height * 0.04
         color: HeeraUI.Theme.primaryBackgroundColor
-        opacity: 0.5
+        opacity: 0.6
     }
 
-    HeeraUI.WindowShadow {
-        view: control
-        geometry: Qt.rect(control.x, control.y, control.width, control.height)
-        radius: _background.radius
-    }
+
 
     ColumnLayout {
         id: _mainLayout
@@ -99,6 +96,7 @@ ControlCenterDialog {
                                 anchors.fill: parent
                                 radius: parent.height / 2
                             }
+
                         }
                     }
                 }
@@ -141,7 +139,7 @@ ControlCenterDialog {
             id: controlItem
             Layout.fillWidth: true
             height: 120
-            visible: wirelessItem.visible || bluetoothItem.visible
+            visible: wirelessItem.visible
 
             RowLayout {
                 anchors.fill: parent
@@ -150,7 +148,8 @@ ControlCenterDialog {
                 CardItem {
                     id: wirelessItem
                     Layout.fillHeight: true
-                    Layout.preferredWidth: contentItem.width / 3 - HeeraUI.Units.largeSpacing * 3
+                    Layout.alignment: Qt.AlignCenter
+                    Layout.preferredWidth: contentItem.width / 2 - HeeraUI.Units.largeSpacing * 1
                     icon: "qrc:/svg/dark/network-wireless-connected-100.svg"
                     visible: networking.wirelessHardwareEnabled
                     checked: networking.wirelessEnabled
@@ -161,26 +160,8 @@ ControlCenterDialog {
                     onClicked: networking.wirelessEnabled = !networking.wirelessEnabled
                 }
 
-                CardItem {
-                    id: bluetoothItem
-                    Layout.fillHeight: true
-                    Layout.preferredWidth: contentItem.width / 3 - HeeraUI.Units.largeSpacing * 3
-                    icon: "qrc:/svg/light/bluetooth-symbolic.svg"
-                    checked: false
-                    label: qsTr("Bluetooth")
-                    text: qsTr("Off")
-                }
-                CardItem {
-                                    id: darkModeItem
-                                    Layout.fillHeight: true
-                                    Layout.fillWidth: true
-                                    icon: HeeraUI.Theme.darkMode || checked ? "qrc:/svg/dark/dark-mode.svg"
-                                                                         : "qrc:/svg/light/dark-mode.svg"
-                                    checked: HeeraUI.Theme.darkMode
-                                    label: qsTr("Dark Mode")
-                                    text: HeeraUI.Theme.darkMode ? qsTr("On") : qsTr("Off")
-                                    onClicked: appearance.switchDarkMode(!HeeraUI.Theme.darkMode)
-                                }
+
+
 
             }
         }

@@ -17,7 +17,7 @@ Item {
     property real windowRadius: (Settings.direction === DockSettings.Left) ? root.width * 0.3 : root.height * 0.3
     property bool isHorizontal: Settings.direction !== DockSettings.Left
     property var appViewLength: isHorizontal ? appItemView.width : appItemView.height
-    property var iconSize: 0
+    property real iconSize: 0
 
     Timer {
         id: resizeIconTimer
@@ -67,12 +67,13 @@ Item {
         radius: _background.radius
     }
 
+
     Rectangle {
         id: _background
         anchors.fill: parent
         radius: windowRadius
         color: HeeraUI.Theme.primaryBackgroundColor
-        opacity: Settings.dockTransparency == true ? 0.5 : 1
+        opacity: Settings.dockTransparency == true ? 0.4 : 1
 
         Behavior on color {
             ColorAnimation {
@@ -126,6 +127,15 @@ Item {
             onClicked: process.startDetached("heera-launcher")
             Layout.alignment: Qt.AlignCenter
         }
+        ToolSeparator {}
+        Rectangle {
+            width: 50
+            height: root.height ? root.height / 4 : 1
+            color: "transparent"
+            border.color: "transparent"
+            border.width: 0
+            radius: 0
+        }
 
         ListView {
             id: appItemView
@@ -133,7 +143,8 @@ Item {
             snapMode: ListView.SnapToItem
             clip: true
             model: appModel
-            interactive: false
+            interactive: true
+            highlight: highlightBar
 
             Layout.fillHeight: true
             Layout.fillWidth: true
@@ -282,39 +293,52 @@ Item {
                 visible: HeeraUI.Theme.darkMode
             }
         }
+
+
+
+
         StandardItem {
+            id: datetimeitem
+            Layout.fillHeight: true
+            Layout.preferredWidth: today.implicitWidth + HeeraUI.Units.smallSpacing
 
 
-                    id: datetimeitem
 
+            Column {
+                anchors.fill: parent
+                Text {
+                    id: time
+                    font {
 
-                    Layout.fillHeight: true
-                    Layout.preferredWidth: _dateTimeLayout.implicitWidth + HeeraUI.Units.smallSpacing
-
-                    RowLayout {
-                        id: _dateTimeLayout
-                        anchors.fill: parent
-
-
-                        Label {
-                            id: timeLabel
-                            Layout.alignment: Qt.AlignCenter
-                            font.pointSize: rootItem.height ? rootItem.height / 3 : 1
-                            color: HeeraUI.Theme.textColor
-
-
-                            Timer {
-                                interval: 1000
-                                repeat: true
-                                running: true
-                                triggeredOnStart: true
-                                onTriggered: {
-                                    timeLabel.text= Qt.formatDateTime(new Date(), "hh:mm A\nyyyy-MM-dd")
-                                }
-                            }
-                        }
+                      pointSize: root.height ? root.height / 4 : 1
                     }
+                    color: HeeraUI.Theme.textColor
+                    anchors.horizontalCenter: parent.horizontalCenter
                 }
+                Text {
+                    id: today
+                    font {
+
+                     pointSize: root.height ? root.height / 6 : 1
+                    }
+                    color: HeeraUI.Theme.textColor
+                    anchors.horizontalCenter: parent.horizontalCenter
+
+                }
+            }
+
+            Timer {
+                interval: 500
+                running: true
+                repeat: true
+
+                onTriggered: {
+                    var date = new Date()
+                    time.text = date.toLocaleTimeString(Qt.locale(), "hh:mm ap")
+                    today.text = date.toLocaleDateString(Qt.locale(), "yyyy-dd-MM dddd")
+                }
+            }
+        }
 
 
     }

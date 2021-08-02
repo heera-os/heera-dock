@@ -27,38 +27,29 @@
 <context>
     <name>ControlCenter</name>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="157"/>
+        <location filename="../qml/ControlCenter.qml" line="156"/>
         <source>Wi-Fi</source>
         <translation>Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="160"/>
-        <location filename="../qml/ControlCenter.qml" line="181"/>
+        <location filename="../qml/ControlCenter.qml" line="159"/>
         <source>On</source>
         <translation>פועל</translation>
     </message>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="160"/>
-        <location filename="../qml/ControlCenter.qml" line="171"/>
-        <location filename="../qml/ControlCenter.qml" line="181"/>
+        <location filename="../qml/ControlCenter.qml" line="159"/>
         <source>Off</source>
         <translation type="unfinished">כבוי</translation>
     </message>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="170"/>
         <source>Bluetooth</source>
-        <translation>Bluetooth</translation>
-    </message>
-    <message>
-        <location filename="../qml/ControlCenter.qml" line="180"/>
-        <source>Dark Mode</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Bluetooth</translation>
     </message>
 </context>
 <context>
     <name>main</name>
     <message>
-        <location filename="../qml/main.qml" line="125"/>
+        <location filename="../qml/main.qml" line="126"/>
         <source>Launcher</source>
         <translation type="unfinished">מַשׁגֵר</translation>
     </message>

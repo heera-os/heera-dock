@@ -27,38 +27,29 @@
 <context>
     <name>ControlCenter</name>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="157"/>
+        <location filename="../qml/ControlCenter.qml" line="156"/>
         <source>Wi-Fi</source>
         <translation>واي فاي</translation>
     </message>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="160"/>
-        <location filename="../qml/ControlCenter.qml" line="181"/>
+        <location filename="../qml/ControlCenter.qml" line="159"/>
         <source>On</source>
         <translation>مشغول</translation>
     </message>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="160"/>
-        <location filename="../qml/ControlCenter.qml" line="171"/>
-        <location filename="../qml/ControlCenter.qml" line="181"/>
+        <location filename="../qml/ControlCenter.qml" line="159"/>
         <source>Off</source>
         <translation>غير مشغول</translation>
     </message>
     <message>
-        <location filename="../qml/ControlCenter.qml" line="170"/>
         <source>Bluetooth</source>
-        <translation>بلوتوث</translation>
-    </message>
-    <message>
-        <location filename="../qml/ControlCenter.qml" line="180"/>
-        <source>Dark Mode</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">بلوتوث</translation>
     </message>
 </context>
 <context>
     <name>main</name>
     <message>
-        <location filename="../qml/main.qml" line="125"/>
+        <location filename="../qml/main.qml" line="126"/>
         <source>Launcher</source>
         <translation>قاذفة</translation>
     </message>
